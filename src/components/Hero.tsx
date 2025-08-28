@@ -12,51 +12,51 @@ export default function Hero({ scrollToSection }: HeroProps) {
       id="home"
       className="relative bg-josseypink1 overflow-hidden min-h-[85vh] flex items-center pt-12"
     >
-      <div className="container mx-auto px-6 py-8 max-w-6xl">
+      <div className="container mx-auto px-4 sm:px-6 py-8 max-w-6xl">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="text-white md:w-1/2 mb-10 md:mb-0">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+          <div className="text-white md:w-1/2 mb-6 md:mb-0 order-2 md:order-1">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
               I&apos;m JosseyCodes
             </h1>
-            <p className="text-xl md:text-2xl opacity-90 mb-6">
+            <p className="text-lg sm:text-xl md:text-2xl opacity-90 mb-6">
               Fullstack Software Developer
             </p>
 
-            <div className="mb-8">
-              <p className="text-lg opacity-85 leading-relaxed max-w-lg">
+            <div className="mb-6">
+              <p className="text-base sm:text-lg opacity-85 leading-relaxed max-w-lg">
                 Welcome here! I build softwares, websites and MVPs that get
                 funded. I&apos;m a valuable addition to your IT team with
                 expertise across the stack.
               </p>
             </div>
 
-            <div className="flex space-x-4 mb-12">
+            <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mb-8">
               <button
                 onClick={() => scrollToSection("portfolio")}
-                className="bg-white text-josseypink1 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transform hover:scale-105 transition-transform duration-300 shadow-md hover:shadow-lg"
+                className="bg-white text-josseypink1 px-5 py-3 rounded-lg font-medium hover:bg-gray-100 transform hover:scale-105 transition-transform duration-300 shadow-md hover:shadow-lg text-sm sm:text-base"
               >
                 View My Work
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-josseypink1 transition-colors duration-300"
+                className="border-2 border-white text-white px-5 py-3 rounded-lg font-medium hover:bg-white hover:text-josseypink1 transition-colors duration-300 text-sm sm:text-base"
               >
                 Contact Me
               </button>
             </div>
 
-            <div className="mt-8">
+            <div className="mt-6">
               <a
                 href="#about"
                 onClick={(e) => {
                   e.preventDefault();
                   scrollToSection("about");
                 }}
-                className="flex items-center text-white opacity-80 hover:opacity-100 transition-opacity"
+                className="flex items-center text-white opacity-80 hover:opacity-100 transition-opacity text-sm sm:text-base"
               >
                 <span className="mr-2">Keep Scrolling</span>
                 <svg
-                  className="w-5 h-5 animate-bounce"
+                  className="w-4 h-4 sm:w-5 sm:h-5 animate-bounce"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -73,13 +73,14 @@ export default function Hero({ scrollToSection }: HeroProps) {
             </div>
           </div>
 
-          <div className="md:w-1/2 flex justify-end items-end h-full">
+          <div className="md:w-1/2 flex justify-center items-center mb-8 md:mb-0 order-1 md:order-2">
             <Image
               src="/assets/img/bestpic-removebg-preview.png"
               alt="Josephine"
               width={450}
               height={450}
-              className="w-[28rem] h-[28rem] md:w-[32rem] md:h-[32rem] object-contain self-end"
+              className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 object-contain border-4 border-white rounded-full"
+              priority
             />
           </div>
         </div>
