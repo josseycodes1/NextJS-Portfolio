@@ -15,13 +15,28 @@ export default function Header({ activeSection, scrollToSection, menuOpen, setMe
           <a href="#" className="text-white font-bold text-xl">Adewumi Josephine</a>
         </div>
 
-        <div className={`${menuOpen ? 'right-0' : '-right-full'} fixed top-16 w-3/5 
-        h-full bg-josseypink2 backdrop-blur-md transition-all duration-500 md:static md:w-auto 
-        md:h-auto md:bg-transparent md:backdrop-blur-0`}>
+        {/* Mobile menu button */}
+        <div 
+          className="text-white text-3xl cursor-pointer md:hidden z-60"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? '✕' : '☰'}
+        </div>
+
+        {/* Mobile menu overlay */}
+        {menuOpen && (
+          <div 
+            className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
+            onClick={() => setMenuOpen(false)}
+          ></div>
+        )}
+
+        {/* Navigation menu */}
+        <div className={`fixed top-0 right-0 h-full w-4/5 max-w-sm bg-josseypink2 shadow-lg transform transition-transform duration-300 ease-in-out z-50 md:relative md:transform-none md:w-auto md:h-auto md:bg-transparent md:shadow-none ${menuOpen ? 'translate-x-0' : 'translate-x-full'} md:translate-x-0`}>
           
-          <ul className="flex flex-col mt-12 ml-8 md:flex-row md:mt-0 md:ml-0 md:space-x-8">
+          <ul className="flex flex-col mt-20 ml-8 space-y-8 md:flex-row md:mt-0 md:ml-0 md:space-y-0 md:space-x-8">
             {['home', 'about', 'portfolio', 'skills', 'contact'].map((item) => (
-              <li key={item} className="mb-8 md:mb-0">
+              <li key={item}>
                 <a 
                   href={`#${item}`}
                   onClick={(e) => {
@@ -29,20 +44,13 @@ export default function Header({ activeSection, scrollToSection, menuOpen, setMe
                     scrollToSection(item);
                     setMenuOpen(false);
                   }}
-                  className={`text-lg ${activeSection === item ? 'text-white font-bold border-b-2 border-white' : 'text-white'} hover:text-gray-500 transition-colors capitalize`}
+                  className={`text-lg ${activeSection === item ? 'text-white font-bold border-b-2 border-white' : 'text-white'} hover:text-gray-300 transition-colors capitalize block py-2`}
                 >
                   {item}
                 </a>
               </li>
             ))}
           </ul>
-        </div>
-
-        <div 
-          className="text-white text-3xl cursor-pointer md:hidden"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? '✕' : '☰'}
         </div>
       </nav>
     </header>

@@ -1,12 +1,37 @@
 'use client';
 
 import Image from "next/image";
+import { useEffect, useRef } from "react";
 
 interface HeroProps {
   scrollToSection: (sectionId: string) => void;
 }
 
 export default function Hero({ scrollToSection }: HeroProps) {
+  // Function to handle smooth scrolling on iOS devices
+  const smoothScrollTo = (elementId: string) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      // Use standard scrollIntoView for better iOS compatibility
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
+  //scroll handler that works on iOS
+  const handleScrollTo = (sectionId: string) => {
+    //first try the parent's function
+    try {
+      scrollToSection(sectionId);
+    } catch (error) {
+      //fallback to our smooth scroll if parent function fails
+      console.log("Using fallback scroll method");
+      smoothScrollTo(sectionId);
+    }
+  };
+
   return (
     <section
       id="home"
@@ -32,13 +57,13 @@ export default function Hero({ scrollToSection }: HeroProps) {
 
             <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mb-8">
               <button
-                onClick={() => scrollToSection("portfolio")}
+                onClick={() => handleScrollTo("portfolio")}
                 className="bg-white text-josseypink1 px-5 py-3 rounded-lg font-medium hover:bg-gray-100 transform hover:scale-105 transition-transform duration-300 shadow-md hover:shadow-lg text-sm sm:text-base"
               >
                 View My Work
               </button>
               <button
-                onClick={() => scrollToSection("contact")}
+                onClick={() => handleScrollTo("contact")}
                 className="border-2 border-white text-white px-5 py-3 rounded-lg font-medium hover:bg-white hover:text-josseypink1 transition-colors duration-300 text-sm sm:text-base"
               >
                 Contact Me
@@ -50,7 +75,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
                 href="#about"
                 onClick={(e) => {
                   e.preventDefault();
-                  scrollToSection("about");
+                  handleScrollTo("about");
                 }}
                 className="flex items-center text-white opacity-80 hover:opacity-100 transition-opacity text-sm sm:text-base"
               >
