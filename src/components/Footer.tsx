@@ -10,7 +10,7 @@ export default function Footer({ scrollToSection }: FooterProps) {
       <div className="container mx-auto px-6 max-w-6xl grid md:grid-cols-3 gap-8">
         <div>
           <h2 className="text-xl font-bold mb-4">Adewumi Josephine Adedoyinsola</h2>
-          <p className="text-sm opacity-80">I am Josephine and this is my personal portfolio website. I will be a good addition to your IT team, so let's collaborate</p>
+          <p className="text-sm opacity-80">I am Josephine and this is my personal portfolio website. I will be a good addition to your IT team, so, let&apos;s collaborate</p>
         </div>
 
         <div>
