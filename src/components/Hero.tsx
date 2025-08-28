@@ -1,7 +1,6 @@
 'use client';
 
 import Image from "next/image";
-import { useEffect, useRef } from "react";
 
 interface HeroProps {
   scrollToSection: (sectionId: string) => void;
@@ -20,14 +19,13 @@ export default function Hero({ scrollToSection }: HeroProps) {
     }
   };
 
-  //scroll handler that works on iOS
+  // Enhanced scroll handler that works on iOS
   const handleScrollTo = (sectionId: string) => {
-    //first try the parent's function
+    // First try the parent's function
     try {
       scrollToSection(sectionId);
-    } catch (error) {
-      //fallback to our smooth scroll if parent function fails
-      console.log("Using fallback scroll method");
+    } catch {
+      // Fallback to our smooth scroll if parent function fails
       smoothScrollTo(sectionId);
     }
   };
