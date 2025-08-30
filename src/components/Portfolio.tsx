@@ -4,7 +4,7 @@ const PortfolioSection = () => {
   const portfolioItems = [
     {
       id: 1,
-      image: "/assets/img/website1.jpg",
+      image: "/assets/img/schoolweb.png",
       title: "Fullstack Multiple user role School Website",
       description:
         "A comprehensive school management system with multiple user roles including admin, teachers, and students.",
@@ -12,7 +12,7 @@ const PortfolioSection = () => {
     },
     {
       id: 2,
-      image: "/assets/img/website2.jpg",
+      image: "/assets/img/schoolapi.png",
       title: "REST API for a school website",
       description:
         "Backend REST API built with Django for a school management system with authentication and data management.",
@@ -20,7 +20,7 @@ const PortfolioSection = () => {
     },
     {
       id: 3,
-      image: "/assets/img/website3.jpg",
+      image: "/assets/img/meportfolio2.png",
       title: "Portfolio Design",
       description:
         "A modern and responsive portfolio website showcasing my projects and skills as a developer.",
@@ -28,7 +28,7 @@ const PortfolioSection = () => {
     },
     {
       id: 4,
-      image: "/assets/img/website4.avif",
+      image: "/assets/img/crownex.png",
       title: "Blogsite Application",
       description:
         "A blog platform featuring articles on various topics with content management capabilities.",
@@ -36,7 +36,7 @@ const PortfolioSection = () => {
     },
     {
       id: 5,
-      image: "/assets/img/website5.jpg",
+      image: "/assets/img/meportfolio1.png",
       title: "Portfolio Design",
       description:
         "Another portfolio design showcasing different styling approaches and layout techniques.",
@@ -44,7 +44,7 @@ const PortfolioSection = () => {
     },
     {
       id: 6,
-      image: "/assets/img/website1.jpg",
+      image: "/assets/img/companyweb.png",
       title: "Company website",
       description:
         "A professional company website with services, about section, and contact information.",
