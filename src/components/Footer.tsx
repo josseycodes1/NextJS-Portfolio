@@ -37,7 +37,7 @@ export default function Footer({ scrollToSection }: FooterProps) {
           <h2 className="text-lg font-bold mb-4">FOLLOW</h2>
           <div className="flex flex-wrap gap-4">
             <a 
-              href="https://github.com/josseycodes" 
+              href="https://github.com/josseycodes1" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
