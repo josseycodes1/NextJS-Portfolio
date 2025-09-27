@@ -16,7 +16,7 @@ const PortfolioSection = () => {
       title: "REST API for a Fragrance E-commerce Website",
       description:
         "Backend REST API built with Django for a single seller fragrance ecommerce website with cart, seller dashboard and buyer functionality.",
-      link: "https://josseycodes-academy.onrender.com/",
+      link: "https://josseycart-backend.onrender.com/api/products/",
     },
     {
       id: 3,
