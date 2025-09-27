@@ -9,10 +9,10 @@ interface HeaderProps {
 
 export default function Header({ activeSection, scrollToSection, menuOpen, setMenuOpen }: HeaderProps) {
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-josseypink1 shadow-md">
+    <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
       <nav className="h-16 flex justify-between items-center px-6 md:px-12 max-w-6xl mx-auto">
         <div>
-          <a href="#" className="text-white font-bold text-xl">Adewumi Josephine</a>
+          <a href="#" className="text-josseypink1 font-bold text-xl">Adewumi Josephine</a>
         </div>
 
         {/* Mobile menu button */}
@@ -44,7 +44,7 @@ export default function Header({ activeSection, scrollToSection, menuOpen, setMe
                     scrollToSection(item);
                     setMenuOpen(false);
                   }}
-                  className={`text-lg ${activeSection === item ? 'text-white font-bold border-b-2 border-white' : 'text-white'} hover:text-gray-300 transition-colors capitalize block py-2`}
+                  className={`text-lg ${activeSection === item ? 'text-josseypink1 font-bold border-b-2 border-white' : 'text-josseypink1'} hover:text-gray-300 transition-colors capitalize block py-2`}
                 >
                   {item}
                 </a>

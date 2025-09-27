@@ -4,18 +4,18 @@ const PortfolioSection = () => {
   const portfolioItems = [
     {
       id: 1,
-      image: "/assets/img/schoolweb.png",
-      title: "Fullstack Multiple user role School Website",
+      image: "/assets/img/ecomm1.png",
+      title: "Fullstack Fragrance E-commerce Website",
       description:
-        "A comprehensive school management system with multiple user roles including admin, teachers, and students.",
-      link: "https://school-management-app-frontend.onrender.com/",
+        "A single seller fragrance ecommerce website with cart, seller dashboard and buyer functionality.",
+      link: "https://scent-shop.vercel.app/",
     },
     {
       id: 2,
-      image: "/assets/img/schoolapi.png",
-      title: "REST API for a school website",
+      image: "/assets/img/ecomm2.png",
+      title: "REST API for a Fragrance E-commerce Website",
       description:
-        "Backend REST API built with Django for a school management system with authentication and data management.",
+        "Backend REST API built with Django for a single seller fragrance ecommerce website with cart, seller dashboard and buyer functionality.",
       link: "https://josseycodes-academy.onrender.com/",
     },
     {
@@ -49,6 +49,22 @@ const PortfolioSection = () => {
       description:
         "A professional company website with services, about section, and contact information.",
       link: "https://cool-axolotl-18dcfd.netlify.app/",
+    },
+    {
+    id: 6,
+      image: "/assets/img/schoolweb.png",
+      title: "Fullstack Multiple user role School Website",
+      description:
+        "A comprehensive school management system with multiple user roles including admin, teachers, and students.",
+      link: "https://school-management-app-frontend.onrender.com/",
+    },
+    {
+      id: 7,
+      image: "/assets/img/schoolapi.png",
+      title: "REST API for a school website",
+      description:
+        "Backend REST API built with Django for a school management system with authentication and data management.",
+      link: "https://josseycodes-academy.onrender.com/",
     },
   ];
 
