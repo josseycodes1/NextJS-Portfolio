@@ -51,7 +51,7 @@ const PortfolioSection = () => {
       link: "https://cool-axolotl-18dcfd.netlify.app/",
     },
     {
-    id: 6,
+      id: 7,
       image: "/assets/img/schoolweb.png",
       title: "Fullstack Multiple user role School Website",
       description:
@@ -59,7 +59,7 @@ const PortfolioSection = () => {
       link: "https://school-management-app-frontend.onrender.com/",
     },
     {
-      id: 7,
+      id: 8,
       image: "/assets/img/schoolapi.png",
       title: "REST API for a school website",
       description:
@@ -69,43 +69,56 @@ const PortfolioSection = () => {
   ];
 
   return (
-    <section id="portfolio" className="py-20 bg-white">
-      <div className="container mx-auto px-6 max-w-6xl">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-700">My Portfolio</h2>
-          <div className="w-20 h-1 bg-pink-500 mx-auto rounded-full"></div>
+    <section id="portfolio" className="py-24 bg-white">
+      <div className="container mx-auto px-6 max-w-7xl">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">My Portfolio</h2>
+          <div className="w-24 h-1.5 bg-pink-500 mx-auto rounded-full mb-2"></div>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            A collection of my recent projects and creative work
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
           {portfolioItems.map((item) => (
             <div
               key={item.id}
-              className="bg-white rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105"
+              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
             >
-              <div className="h-48 overflow-hidden relative">
+              <div className="h-56 overflow-hidden relative">
                 <Image
                   src={item.image}
                   alt={item.title}
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-500 hover:scale-105"
                 />
               </div>
-              <div className="p-4">
-                <h3 className="text-lg font-semibold text-gray-700 mb-2">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-800 mb-3 leading-tight">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 text-sm mb-4">{item.description}</p>
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-600 transition-colors"
-                >
-                  View Website
-                </a>
+                <p className="text-gray-600 text-base mb-6 leading-relaxed">
+                  {item.description}
+                </p>
+                <div className="pt-2">
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-pink-500 text-white px-6 py-3 rounded-lg hover:bg-pink-600 transition-colors duration-300 font-medium"
+                  >
+                    View Website
+                  </a>
+                </div>
               </div>
             </div>
           ))}
+        </div>
+        
+        <div className="text-center mt-16">
+          <p className="text-gray-500 text-sm">
+            Showing {portfolioItems.length} projects
+          </p>
         </div>
       </div>
     </section>
