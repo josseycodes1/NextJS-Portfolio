@@ -44,7 +44,7 @@ export default function Header({ activeSection, scrollToSection, menuOpen, setMe
                     scrollToSection(item);
                     setMenuOpen(false);
                   }}
-                  className={`text-lg ${activeSection === item ? 'text-white font-bold border-b-2 border-gray-900' : 'text-josseypink1'} hover:text-gray-300 transition-colors capitalize block py-2`}
+                  className={`text-lg ${activeSection === item ? 'text-white font-bold border-b-2 border-white' : 'text-white'} hover:text-gray-300 transition-colors capitalize block py-2`}
                 >
                   {item}
                 </a>
