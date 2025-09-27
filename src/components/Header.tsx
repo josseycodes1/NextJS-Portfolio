@@ -37,19 +37,22 @@ export default function Header({ activeSection, scrollToSection, menuOpen, setMe
           <ul className="flex flex-col mt-20 ml-8 space-y-8 md:flex-row md:mt-0 md:ml-0 md:space-y-0 md:space-x-8">
             {['home', 'about', 'portfolio', 'skills', 'contact'].map((item) => (
               <li key={item}>
-                <a 
+                <a
                   href={`#${item}`}
                   onClick={(e) => {
                     e.preventDefault();
                     scrollToSection(item);
                     setMenuOpen(false);
                   }}
-                  className={`text-lg ${activeSection === item ? 'text-josseypink1 font-bold border-b-2 border-white' : 'text-white'} hover:text-gray-300 transition-colors capitalize block py-2`}
+                  className={`text-lg transition-colors capitalize block py-2
+                    text-white lg:text-josseypink1 hover:text-gray-300
+                    ${activeSection === item ? 'font-bold border-b-2 border-white lg:border-josseypink1' : ''}`}
                 >
                   {item}
                 </a>
               </li>
             ))}
+
           </ul>
         </div>
       </nav>
