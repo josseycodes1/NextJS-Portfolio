@@ -7,11 +7,11 @@ interface HeroProps {
 }
 
 export default function Hero({ scrollToSection }: HeroProps) {
-  // Function to handle smooth scrolling on iOS devices
+ 
   const smoothScrollTo = (elementId: string) => {
     const element = document.getElementById(elementId);
     if (element) {
-      // Use standard scrollIntoView for better iOS compatibility
+ 
       element.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
@@ -19,13 +19,13 @@ export default function Hero({ scrollToSection }: HeroProps) {
     }
   };
 
-  // Enhanced scroll handler that works on iOS
+
   const handleScrollTo = (sectionId: string) => {
-    // First try the parent's function
+
     try {
       scrollToSection(sectionId);
     } catch {
-      // Fallback to our smooth scroll if parent function fails
+   
       smoothScrollTo(sectionId);
     }
   };
@@ -48,9 +48,8 @@ export default function Hero({ scrollToSection }: HeroProps) {
 
             <div className="mb-6">
               <p className="text-base sm:text-lg opacity-85 leading-relaxed max-w-lg">
-                Welcome here! I build softwares, websites and MVPs that get
-                funded. I&apos;m a valuable addition to your IT team with
-                expertise across the stack.
+                Welcome here! I build softwares, APIs, websites and MVPs that get
+                funded. I&apos;m a valuable addition to your IT team. Let us discuss how I can help you
               </p>
             </div>
 
@@ -60,7 +59,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
                 onClick={() => handleScrollTo("portfolio")}
                 className="bg-white text-josseypink1 px-5 py-3 rounded-lg font-medium hover:bg-gray-100 transform hover:scale-105 transition-transform duration-300 shadow-md hover:shadow-lg text-sm sm:text-base"
               >
-                View My Work
+                View My Projects
               </button>
               <a
                 href="https://docs.google.com/document/d/1pOxMRF6Hhl0nEqKUAAz_kdqbm3cgh34nq6cZ-pgepm4/edit?usp=sharing"
