@@ -32,7 +32,7 @@ export default function Header({ activeSection, scrollToSection, menuOpen, setMe
         )}
 
         {/* Navigation menu */}
-        <div className={`fixed top-0 right-0 h-full w-4/5 max-w-sm bg-josseypink1 text-white shadow-lg transform transition-transform duration-300 ease-in-out z-50 md:relative md:transform-none md:w-auto md:h-auto md:bg-transparent md:shadow-none ${menuOpen ? 'translate-x-0' : 'translate-x-full'} md:translate-x-0`}>
+        <div className={`fixed top-0 right-0 h-full w-4/5 max-w-sm bg-josseypink1 shadow-lg transform transition-transform duration-300 ease-in-out z-50 md:relative md:transform-none md:w-auto md:h-auto md:bg-transparent md:shadow-none ${menuOpen ? 'translate-x-0' : 'translate-x-full'} md:translate-x-0`}>
           
           <ul className="flex flex-col mt-20 ml-8 space-y-8 md:flex-row md:mt-0 md:ml-0 md:space-y-0 md:space-x-8">
             {['home', 'about', 'portfolio', 'skills', 'contact'].map((item) => (
@@ -44,7 +44,7 @@ export default function Header({ activeSection, scrollToSection, menuOpen, setMe
                     scrollToSection(item);
                     setMenuOpen(false);
                   }}
-                  className={`text-lg ${activeSection === item ? 'text-josseypink1 font-bold border-b-2 border-white' : 'text-josseypink1'} hover:text-gray-300 transition-colors capitalize block py-2`}
+                  className={`text-lg ${activeSection === item ? 'text-white font-bold border-b-2 border-gray-900' : 'text-josseypink1'} hover:text-gray-300 transition-colors capitalize block py-2`}
                 >
                   {item}
                 </a>
