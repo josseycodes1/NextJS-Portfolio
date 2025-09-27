@@ -17,7 +17,7 @@ export default function Header({ activeSection, scrollToSection, menuOpen, setMe
 
         {/* Mobile menu button */}
         <div 
-          className="text-white text-3xl cursor-pointer md:hidden z-60"
+          className="text-josseypink1 text-3xl cursor-pointer md:hidden z-60"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? '✕' : '☰'}
