@@ -114,12 +114,6 @@ const PortfolioSection = () => {
             </div>
           ))}
         </div>
-        
-        <div className="text-center mt-16">
-          <p className="text-gray-500 text-sm">
-            Showing {portfolioItems.length} projects
-          </p>
-        </div>
       </div>
     </section>
   );
