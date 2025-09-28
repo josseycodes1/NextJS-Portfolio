@@ -25,7 +25,7 @@ const AboutSection = () => {
               I am Josephine
             </h3>
             <span className="text-base sm:text-lg text-gray-600 mb-4 block">
-              Website designer
+              Software Engineer
             </span>
             <p className="text-gray-700 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
               I am a Fullstack Software Developer who builds websites and
