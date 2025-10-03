@@ -75,7 +75,7 @@ const SkillsSection = () => {
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">Skills</h2>
           <div className="w-20 h-1 bg-josseypink1 mx-auto rounded-full mb-3"></div>
           <p className="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">
-            Technologies and abilities I bring to every project
+            Technologies and Skills I bring to every project
           </p>
         </div>
 
