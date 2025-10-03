@@ -14,7 +14,7 @@ const AboutSection = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // Animate image
+           
             if (imageRef.current) {
               imageRef.current.style.opacity = '0';
               imageRef.current.style.transform = 'translateX(-50px) scale(0.9)';
@@ -105,7 +105,7 @@ const AboutSection = () => {
 
               <div className="space-y-3 lg:space-y-4">
                 <p className="text-gray-700 leading-relaxed text-sm sm:text-base lg:text-base">
-                  I'm a <span className="text-josseypink1 font-semibold">Fullstack Software Developer</span> who builds high-performance websites and applications that scale with business needs. I specialize in creating secure backends with Python and Django, paired with fast, interactive frontends using React and Next.js.
+                  I am <span className="text-josseypink1 font-semibold">Fullstack Software Developer</span> who builds high-performance websites and applications that scale with business needs. I specialize in creating secure backends with Python and Django, paired with fast, interactive frontends using React and Next.js.
                 </p>
 
                 <p className="text-gray-700 leading-relaxed text-sm sm:text-base lg:text-base">
