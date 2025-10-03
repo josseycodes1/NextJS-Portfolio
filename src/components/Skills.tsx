@@ -80,13 +80,13 @@ const SkillsSection = () => {
         </div>
 
         <div className="space-y-8">
-          {Object.entries(skills).map(([category, items], categoryIndex) => (
+          {Object.entries(skills).map(([category, items]) => (
             <div key={category} className="skill-category">
               <h3 className="text-lg sm:text-xl font-semibold mb-4 text-gray-800 text-center sm:text-left border-l-4 border-josseypink1 pl-4">
                 {category}
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-                {items.map((skill, skillIndex) => (
+                {items.map((skill) => (
                   <div
                     key={skill}
                     className="skill-item bg-pink-50 px-3 py-2 rounded-lg text-gray-700 hover:text-white hover:bg-josseypink1 transform hover:scale-105 transition-all duration-300 cursor-pointer shadow-sm hover:shadow-md text-center text-sm"
