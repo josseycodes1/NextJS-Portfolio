@@ -60,7 +60,7 @@ const PortfolioSection = () => {
       title: "Fullstack Multiple user role School Website",
       description:
         "A comprehensive school management system with multiple user roles including admin, teachers, and students.",
-      link: "https://school-management-app-frontend.onrender.com/",
+      link: "https://school-website-mauve-zeta.vercel.app/",
     },
     {
       id: 8,
