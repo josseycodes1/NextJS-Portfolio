@@ -13,7 +13,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
   const scrollIndicatorRef = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
-    // Add entrance animations when component mounts
+   
     const textElement = textRef.current;
     const imageElement = imageRef.current;
     const scrollElement = scrollIndicatorRef.current;
@@ -113,7 +113,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
                 rel="noopener noreferrer"
                 className="border-2 border-white text-white px-5 py-3 rounded-lg font-medium hover:bg-white hover:text-josseypink1 transition-all duration-300 text-sm sm:text-base flex items-center justify-center hover:-translate-y-1 hover:shadow-lg"
               >
-                View My CV
+                Download My CV
               </a>
             </div>
 

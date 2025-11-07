@@ -16,6 +16,14 @@ const PortfolioSection = () => {
     },
     {
       id: 2,
+      image: "/assets/img/schoolweb.png",
+      title: "Fullstack Multiple user role School Website",
+      description:
+        "A comprehensive school management system with multiple user roles including admin, teachers, and students.",
+      link: "https://school-website-mauve-zeta.vercel.app/",
+    },
+    {
+      id: 3,
       image: "/assets/img/ecomm2.png",
       title: "REST API for a Fragrance E-commerce Website",
       description:
@@ -23,7 +31,7 @@ const PortfolioSection = () => {
       link: "https://josseycart-backend.onrender.com/api/products/",
     },
     {
-      id: 3,
+      id: 4,
       image: "/assets/img/meportfolio2.png",
       title: "Portfolio Design",
       description:
@@ -31,7 +39,7 @@ const PortfolioSection = () => {
       link: "https://portfoliosite-sage-psi.vercel.app/",
     },
     {
-      id: 4,
+      id: 5,
       image: "/assets/img/crownex.png",
       title: "Blogsite Application",
       description:
@@ -39,7 +47,7 @@ const PortfolioSection = () => {
       link: "https://crownexempire.blogspot.com/",
     },
     {
-      id: 5,
+      id: 6,
       image: "/assets/img/meportfolio1.png",
       title: "Portfolio Design",
       description:
@@ -47,20 +55,12 @@ const PortfolioSection = () => {
       link: "https://josseycodes.pythonanywhere.com/",
     },
     {
-      id: 6,
+      id: 7,
       image: "/assets/img/companyweb.png",
       title: "Company website",
       description:
         "A professional company website with services, about section, and contact information.",
       link: "https://cool-axolotl-18dcfd.netlify.app/",
-    },
-    {
-      id: 7,
-      image: "/assets/img/schoolweb.png",
-      title: "Fullstack Multiple user role School Website",
-      description:
-        "A comprehensive school management system with multiple user roles including admin, teachers, and students.",
-      link: "https://school-website-mauve-zeta.vercel.app/",
     },
     {
       id: 8,
