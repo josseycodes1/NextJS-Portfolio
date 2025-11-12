@@ -71,11 +71,11 @@ export default function Hero({ scrollToSection }: HeroProps) {
   return (
     <section
       id="home"
-      className="relative bg-josseypink1 overflow-hidden min-h-[85vh] flex items-center pt-12"
+      className="relative bg-white overflow-hidden min-h-[85vh] flex items-center pt-12"
     >
       {/* Optional: Add subtle background pattern or gradient animation */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0 bg-gradient-to-r from-white to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-josseypink1/10 to-transparent"></div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 py-8 max-w-6xl relative z-10">
@@ -83,27 +83,27 @@ export default function Hero({ scrollToSection }: HeroProps) {
           {/* Left Content */}
           <div 
             ref={textRef}
-            className="text-white md:w-1/2 mb-6 md:mb-0 order-2 md:order-1"
+            className="text-gray-800 md:w-1/2 mb-6 md:mb-0 order-2 md:order-1"
           >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-center md:text-left">
               I&apos;m JosseyCodes
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl opacity-90 mb-6">
+            <p className="text-lg sm:text-xl md:text-2xl text-josseypink1 mb-6 text-center md:text-left">
               Fullstack Software Developer
             </p>
 
             <div className="mb-6">
-              <p className="text-base sm:text-lg opacity-85 leading-relaxed max-w-lg">
+              <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-lg text-center md:text-left">
                 Welcome here! I build softwares, APIs, websites and MVPs that get
                 funded. I&apos;m a valuable addition to your IT team. Let us discuss how I can help you
               </p>
             </div>
 
             {/* Buttons Section */}
-            <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mb-8">
+            <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mb-8 justify-center md:justify-start">
               <button
                 onClick={() => handleScrollTo("portfolio")}
-                className="bg-white text-josseypink1 px-5 py-3 rounded-lg font-medium hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg text-sm sm:text-base hover:-translate-y-1"
+                className="bg-josseypink1 text-white px-5 py-3 rounded-lg font-medium hover:bg-josseypink2 transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg text-sm sm:text-base hover:-translate-y-1"
               >
                 View My Projects
               </button>
@@ -111,14 +111,14 @@ export default function Hero({ scrollToSection }: HeroProps) {
                 href="https://docs.google.com/document/d/1pOxMRF6Hhl0nEqKUAAz_kdqbm3cgh34nq6cZ-pgepm4/edit?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-2 border-white text-white px-5 py-3 rounded-lg font-medium hover:bg-white hover:text-josseypink1 transition-all duration-300 text-sm sm:text-base flex items-center justify-center hover:-translate-y-1 hover:shadow-lg"
+                className="border-2 border-josseypink1 text-josseypink1 px-5 py-3 rounded-lg font-medium hover:bg-josseypink1 hover:text-white transition-all duration-300 text-sm sm:text-base flex items-center justify-center hover:-translate-y-1 hover:shadow-lg"
               >
                 Download My CV
               </a>
             </div>
 
             {/* Keep Scrolling Link */}
-            <div className="mt-6">
+            <div className="mt-6 flex justify-center md:justify-start">
               <a
                 ref={scrollIndicatorRef}
                 href="#about"
@@ -126,7 +126,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
                   e.preventDefault();
                   handleScrollTo("about");
                 }}
-                className="flex items-center text-white opacity-80 hover:opacity-100 transition-all duration-300 text-sm sm:text-base group"
+                className="flex items-center text-josseypink1 opacity-80 hover:opacity-100 transition-all duration-300 text-sm sm:text-base group"
               >
                 <span className="mr-2 group-hover:translate-y-1 transition-transform duration-300">
                   Keep Scrolling
@@ -156,17 +156,17 @@ export default function Hero({ scrollToSection }: HeroProps) {
           >
             <div className="relative group">
               <Image
-                src="/assets/img/bestpic2.png"
+                src="/assets/img/bestpic-removebg-preview.png"
                 alt="Josephine"
                 width={450}
                 height={450}
                 className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 object-cover 
-                border-4 border-white rounded-full shadow-xl group-hover:shadow-2xl 
+                border-4 border-josseypink1 rounded-full shadow-xl group-hover:shadow-2xl 
                 transition-all duration-500 group-hover:scale-105"
                 priority
               />
               {/* Subtle glow effect on hover */}
-              <div className="absolute inset-0 rounded-full border-4 border-transparent bg-gradient-to-r from-white/20 to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 group-hover:scale-110"></div>
+              <div className="absolute inset-0 rounded-full border-4 border-transparent bg-gradient-to-r from-josseypink1/20 to-josseypink1/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 group-hover:scale-110"></div>
             </div>
           </div>
         </div>
