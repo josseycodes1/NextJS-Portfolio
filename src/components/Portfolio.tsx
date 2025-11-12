@@ -16,7 +16,7 @@ const PortfolioSection = () => {
     },
     {
       id: 2,
-      image: "/assets/img/schoolweb.png",
+      image: "/assets/img/schoolapi.png",
       title: "Fullstack Multiple user role School Website",
       description:
         "A comprehensive school management system with multiple user roles including admin, teachers, and students.",
@@ -64,7 +64,7 @@ const PortfolioSection = () => {
     },
     {
       id: 8,
-      image: "/assets/img/schoolapi.png",
+      image: "/assets/img/schoolweb.png",
       title: "REST API for a school website",
       description:
         "Backend REST API built with Django for a school management system with authentication and data management.",
