@@ -81,7 +81,7 @@ const AboutSection = () => {
           <div ref={imageRef} className="lg:w-2/5 flex justify-center">
             <div className="relative group">
               <Image
-                src="/assets/img/bestpic2.png"
+                src="/assets/img/bestpic-removebg-preview.png"
                 alt="Josephine"
                 width={400}
                 height={400}
