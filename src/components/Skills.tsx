@@ -8,7 +8,7 @@ const SkillsSection = () => {
   const skills = {
     'Coding Development': ['REST API', 'TailwindCSS', 'ReactJS', 'NextJS', 'Bootstrap', 'Python-Django'],
     'Non-coding Development': ['Copywriting', 'Content Writing', 'Technical Writing', 'Script Writing', 'API Documentation', 'Training'],
-    'Design Tools': ['Figma', 'Adobe XD', 'Photoshop'],
+    'Website Design': ['Wordpress', 'Shopify', 'WooCommerce'],
     'Technical Skills': ['Communication', 'Adaptability', 'Team Work', 'Leadership', 'Problem Solving', 'Project Management']
   };
 
