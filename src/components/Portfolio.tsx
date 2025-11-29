@@ -16,7 +16,7 @@ const PortfolioSection = () => {
     },
     {
       id: 2,
-      image: "/assets/img/schoolapi.jpeg",
+      image: "/assets/img/schoolwebsite2.mp4",
       title: "Fullstack Multiple user role School Website",
       description:
         "A comprehensive school management system with multiple user roles including admin, teachers, and students.",
@@ -24,10 +24,10 @@ const PortfolioSection = () => {
     },
     {
       id: 3,
-      image: "/assets/img/ecomm2.png",
-      title: "REST API for a Fragrance E-commerce Website",
+      image: "/assets/img/funlearndemo.mp4",
+      title: "An AI studdy buddy",
       description:
-        "Backend REST API built with Django for a single seller fragrance ecommerce website with cart, seller dashboard and buyer functionality.",
+        "An AI study buddy that allows you upload pdfs to get summarize, join quizzes and chat in rooms to generally discuss studey materials",
       link: "https://josseycart-backend.onrender.com/api/products/",
     },
     {
@@ -64,7 +64,7 @@ const PortfolioSection = () => {
     },
     {
       id: 8,
-      image: "/assets/img/schoolweb.jpeg",
+      image: "/assets/img/schoolwebsite2.mp4",
       title: "REST API for a school website",
       description:
         "Backend REST API built with Django for a school management system with authentication and data management.",
@@ -136,14 +136,28 @@ const PortfolioSection = () => {
               key={item.id}
               className="portfolio-item bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 group"
             >
-              {/* Image Container */}
-              <div className="h-48 sm:h-56 overflow-hidden relative">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                />
+              {/* Media Container */}
+                <div className="h-48 sm:h-56 overflow-hidden relative">
+                  {item.image.endsWith('.mp4') ? (
+                    <video
+                      className="w-full h-full object-cover"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    >
+                      <source src={item.image} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  ) : (
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                  )}
+                
                 {/* Overlay on hover */}
                 <div className="absolute inset-0 bg-josseypink1/0 group-hover:bg-josseypink1/10 transition-all duration-500"></div>
               </div>
