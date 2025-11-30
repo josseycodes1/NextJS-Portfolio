@@ -15,20 +15,20 @@ const PortfolioSection = () => {
       link: "https://scent-shop.vercel.app/",
     },
     {
-      id: 3,
-      image: "/assets/img/schoolwebsite2.mp4",
-      title: "Fullstack Multiple user role School Website",
-      description:
-        "A comprehensive school management system with multiple user roles including admin, teachers, and students.",
-      link: "https://school-website-mauve-zeta.vercel.app/",
-    },
-    {
       id: 2,
       image: "/assets/img/funlearndemo.mp4",
       title: "An AI studdy buddy",
       description:
         "AI study buddy that allows you to upload PDFs, get instant summaries, compete in quizzes, join chatrooms and climb leaderboards with friends.",
       link: "https://funlearn-frontend.vercel.app/",
+    },
+    {
+      id: 3,
+      image: "/assets/img/schoolwebsite2.mp4",
+      title: "Fullstack Multiple user role School Website",
+      description:
+        "A comprehensive school management system with multiple user roles including admin, teachers, and students.",
+      link: "https://school-website-mauve-zeta.vercel.app/",
     },
     {
       id: 4,
