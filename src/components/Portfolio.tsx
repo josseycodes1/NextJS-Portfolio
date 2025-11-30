@@ -32,7 +32,7 @@ const PortfolioSection = () => {
     },
     {
       id: 4,
-      image: "/assets/img/meportfolio2.png",
+      image: "/assets/img/portfolio3.mp4",
       title: "Portfolio Design",
       description:
         "A modern and responsive portfolio website showcasing my projects and skills as a developer.",
@@ -48,7 +48,7 @@ const PortfolioSection = () => {
     },
     {
       id: 6,
-      image: "/assets/img/meportfolio1.png",
+      image: "/assets/img/portfolio3.mp4",
       title: "Portfolio Design",
       description:
         "Another portfolio design showcasing different styling approaches and layout techniques.",
