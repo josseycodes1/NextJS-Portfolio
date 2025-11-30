@@ -124,8 +124,8 @@ const AboutSection = () => {
                   <div className="text-xs text-gray-600">Years Experience</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl lg:text-2xl font-bold text-josseypink1">50+</div>
-                  <div className="text-xs text-gray-600">Projects Completed</div>
+                  <div className="text-xl sm:text-2xl lg:text-2xl font-bold text-josseypink1">100%</div>
+                  <div className="text-xs text-gray-600">Quality Projects</div>
                 </div>
                 <div className="text-center col-span-2 sm:col-span-1">
                   <div className="text-xl sm:text-2xl lg:text-2xl font-bold text-josseypink1">100%</div>
@@ -152,7 +152,7 @@ const AboutSection = () => {
                   </svg>
                 </a>
                 <a
-                  href="https://www.twitter.com/in/josseycodes"
+                  href="https://www.twitter.com/josseycodes"
                   className="w-8 h-8 sm:w-10 sm:h-10 bg-josseypink1 text-white rounded-full flex items-center justify-center hover:bg-[#624F82] transform hover:scale-110 transition-all duration-300 shadow-md hover:shadow-lg"
                 >
                   <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="currentColor" viewBox="0 0 24 24">

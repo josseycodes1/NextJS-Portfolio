@@ -48,11 +48,11 @@ const PortfolioSection = () => {
     },
     {
       id: 6,
-      image: "/assets/img/portfolio3.mp4",
+      image: "/assets/img/portfolio2.mp4",
       title: "Portfolio Design",
       description:
         "Another portfolio design showcasing different styling approaches and layout techniques.",
-      link: "https://josseycodes.pythonanywhere.com/",
+      link: "https://naija-website-designer.vercel.app",
     },
     {
       id: 7,
