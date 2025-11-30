@@ -15,7 +15,7 @@ const PortfolioSection = () => {
       link: "https://scent-shop.vercel.app/",
     },
     {
-      id: 2,
+      id: 3,
       image: "/assets/img/schoolwebsite2.mp4",
       title: "Fullstack Multiple user role School Website",
       description:
@@ -23,11 +23,11 @@ const PortfolioSection = () => {
       link: "https://school-website-mauve-zeta.vercel.app/",
     },
     {
-      id: 3,
+      id: 2,
       image: "/assets/img/funlearndemo.mp4",
       title: "An AI studdy buddy",
       description:
-        "An AI study buddy that allows you upload pdfs to get summarize, join quizzes and chat in rooms to generally discuss studey materials",
+        "AI study buddy that allows you to upload PDFs, get instant summaries, compete in quizzes, join chatrooms and climb leaderboards with friends.",
       link: "https://funlearn-frontend.vercel.app/",
     },
     {
@@ -56,7 +56,7 @@ const PortfolioSection = () => {
     },
     {
       id: 7,
-      image: "/assets/img/webtour.mp4",
+      image: "/assets/img/companyweb.png",
       title: "Company website",
       description:
         "A professional company website with services, about section, and contact information.",
