@@ -144,7 +144,7 @@ const AboutSection = () => {
                   </svg>
                 </a>
                 <a
-                  href="https://www.github.com/in/josseycodes1"
+                  href="https://github.com/josseycodes1"
                   className="w-8 h-8 sm:w-10 sm:h-10 bg-josseypink1 text-white rounded-full flex items-center justify-center hover:bg-[#624F82] transform hover:scale-110 transition-all duration-300 shadow-md hover:shadow-lg"
                 >
                   <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="currentColor" viewBox="0 0 24 24">

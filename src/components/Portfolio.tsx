@@ -8,7 +8,7 @@ const PortfolioSection = () => {
   const portfolioItems = [
     {
       id: 1,
-      image: "/assets/img/ecomm1.png",
+      image: "/assets/img/ecomm1.mp4",
       title: "Fullstack Fragrance E-commerce Website",
       description:
         "A single seller fragrance ecommerce website with cart, seller dashboard and buyer functionality.",
@@ -28,7 +28,7 @@ const PortfolioSection = () => {
       title: "An AI studdy buddy",
       description:
         "An AI study buddy that allows you upload pdfs to get summarize, join quizzes and chat in rooms to generally discuss studey materials",
-      link: "https://josseycart-backend.onrender.com/api/products/",
+      link: "https://funlearn-frontend.vercel.app/",
     },
     {
       id: 4,
@@ -56,7 +56,7 @@ const PortfolioSection = () => {
     },
     {
       id: 7,
-      image: "/assets/img/companyweb.png",
+      image: "/assets/img/webtour.mp4",
       title: "Company website",
       description:
         "A professional company website with services, about section, and contact information.",
